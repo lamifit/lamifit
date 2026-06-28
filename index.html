@@ -1,66 +1,111 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lami Fit</title>
+
+<title>Lami Fit | Fashion Store</title>
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body{
-background:#111;
-color:white;
+  background:#faf7f2;
+  color:#222;
 }
 
 header{
-background:black;
-padding:20px;
-text-align:center;
-border-bottom:2px solid gold;
+  background:#111;
+  color:white;
+  padding:25px;
+  text-align:center;
 }
 
 header h1{
-color:gold;
-font-size:32px;
+  letter-spacing:3px;
 }
 
-header p{
-margin-top:10px;
-color:#ddd;
+nav{
+  margin-top:15px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:10px;
 }
 
 .hero{
-padding:60px 20px;
-text-align:center;
+  height:80vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:30px;
+  background:linear-gradient(#0008,#0008),
+  url('https://images.unsplash.com/photo-1441986300917-64674bd600d8') center/cover;
+  color:white;
 }
 
 .hero h2{
-font-size:40px;
-margin-bottom:15px;
+  font-size:40px;
 }
 
 .hero p{
-font-size:18px;
-color:#ccc;
-margin-bottom:30px;
+  margin:15px;
 }
 
 .btn{
-display:inline-block;
-background:gold;
-color:black;
-padding:15px 35px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
+  background:#c9a227;
+  color:white;
+  padding:12px 25px;
+  border-radius:25px;
+  text-decoration:none;
 }
+
+.section{
+  padding:50px 20px;
+  text-align:center;
+}
+
+.section h2{
+  margin-bottom:30px;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 5px 20px #0001;
+}
+
+.card img{
+  width:100%;
+  border-radius:15px;
+}
+
+.card h3{
+  margin:15px;
+}
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
 </style>
 
 </head>
@@ -68,42 +113,94 @@ font-weight:bold;
 <body>
 
 <header>
-<h1>Lami Fit</h1>
-<p>Luxury Fashion & Accessories</p>
+
+<h1>LAMI FIT</h1>
+
+<nav>
+<a href="#shop">Shop</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
+
 <section class="hero">
-<h2>Elevate Your Style</h2>
-<p>Discover premium clothing, watches, bracelets and necklaces curated just for you.</p>
 
-<a class="btn" href="https://wa.me/2349056380344">
-Shop on WhatsApp
-</a>
+<div>
+
+<h2>Luxury Fashion, Made For You</h2>
+
+<p>Clothes • Bracelets • Wristwatches • Necklaces</p>
+
+<a class="btn" href="#shop">Shop Now</a>
+
+</div>
 
 </section>
-<section style="padding:50px 20px;background:#1a1a1a;text-align:center;">
-    <h2 style="color:gold;margin-bottom:30px;">Shop By Category</h2>
 
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
 
-        <div style="background:#222;padding:20px;border-radius:15px;width:150px;">
-            <h3>👗 Clothing</h3>
-        </div>
 
-        <div style="background:#222;padding:20px;border-radius:15px;width:150px;">
-            <h3>⌚ Watches</h3>
-        </div>
+<section class="section" id="shop">
 
-        <div style="background:#222;padding:20px;border-radius:15px;width:150px;">
-            <h3>💎 Bracelets</h3>
-        </div>
+<h2>Our Collection</h2>
 
-        <div style="background:#222;padding:20px;border-radius:15px;width:150px;">
-            <h3>📿 Necklaces</h3>
-        </div>
 
-    </div>
+<div class="products">
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3">
+<h3>Clothing</h3>
+<p>Elegant pieces for your style</p>
+</div>
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d">
+<h3>Bracelets</h3>
+<p>Simple luxury accessories</p>
+</div>
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d">
+<h3>Wristwatches</h3>
+<p>Classic timepieces</p>
+</div>
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
+<h3>Necklaces</h3>
+<p>Beautiful finishing touches</p>
+</div>
+
+
+</div>
+
 </section>
+
+
+
+<section class="section" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Instagram: lamifit.ng</p>
+
+<p>WhatsApp: 09056380344</p>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Lami Fit. All Rights Reserved.</p>
+
+</footer>
+
+
 </body>
 </html>
 
