@@ -265,45 +265,82 @@ body{
 .card:hover{
   transform:translateY(-12px);
 }
-/* Floating doodles */
+
+/* =========================
+   Floating Doodles
+========================= */
 
 .doodle{
   position: fixed;
-  font-size: 45px;
-  opacity: 0.5;
+  font-size: 40px;
+  opacity: 0.15;
+  pointer-events: none;
   z-index: 0;
-  animation: float 5s ease-in-out infinite;
+  animation: doodleFloat 6s ease-in-out infinite;
 }
 
-.watch{
-  top: 120px;
-  left: 20px;
-}
+/* Individual Positions */
 
 .sparkle{
-  top: 250px;
-  right: 30px;
+  top:8%;
+  left:6%;
+}
+
+.star{
+  top:15%;
+  right:8%;
+}
+
+.heart{
+  top:45%;
+  left:5%;
+}
+
+.butterfly{
+  top:72%;
+  right:10%;
+}
+
+.flower{
+  bottom:12%;
+  left:12%;
 }
 
 .shirt{
-  bottom: 120px;
-  left: 40px;
+  top:28%;
+  right:10%;
 }
 
-.jewelry{
-  bottom: 80px;
-  right: 50px;
+.watch{
+  bottom:18%;
+  right:18%;
 }
 
-
-@keyframes float{
-
-0%,100%{
- transform: translateY(0px) rotate(0deg);
+.bracelet{
+  bottom:40%;
+  left:22%;
 }
 
-50%{
- transform: translateY(-20px) rotate(10deg);
+.bag{
+  top:60%;
+  right:5%;
 }
+
+.bow{
+  top:10%;
+  left:45%;
+}
+
+/* Floating Animation */
+
+@keyframes doodleFloat{
+
+  0%,100%{
+    transform:translateY(0) rotate(0deg);
+  }
+
+  50%{
+    transform:translateY(-15px) rotate(6deg);
+  }
 
 }
