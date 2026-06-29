@@ -217,3 +217,51 @@ body{
   text-decoration:none;
   box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
+.hero,
+.card,
+.story,
+.why{
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(25px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.btn{
+  transition:0.3s ease;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+.logo{
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-8px);
+  }
+}
+
+.card{
+  transition:0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-12px);
+}
