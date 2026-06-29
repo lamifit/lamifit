@@ -1,199 +1,133 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#fffaf3;
+    background:#fdfaf6;
     color:#222;
     line-height:1.6;
 }
 
-/* Announcement Bar */
+/* =========================
+   Announcement
+========================= */
 
 .announcement{
     background:#111;
-    color:white;
+    color:#fff;
     text-align:center;
     padding:12px;
     font-size:14px;
     letter-spacing:1px;
 }
 
-/* Hero */
+/* =========================
+   Navbar
+========================= */
 
-.hero{
-    min-height:90vh;
+.navbar{
     display:flex;
-    flex-direction:column;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    text-align:center;
-    padding:40px 20px;
-    background:linear-gradient(to bottom,#fffaf3,#ffffff);
+    padding:25px 8%;
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
 }
 
-.logo{
-    width:90px;
-    height:90px;
+.logo,
+.footer-logo{
+    width:60px;
+    height:60px;
     border-radius:50%;
     background:#111;
     color:#d4af37;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:34px;
     font-weight:bold;
-    margin-bottom:25px;
-    animation:float 3s ease-in-out infinite;
+    font-size:24px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#b8860b;
+}
+
+/* =========================
+   Hero
+========================= */
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+    padding:80px 8%;
+}
+
+.tag{
+    color:#b8860b;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:13px;
 }
 
 .hero h1{
-    font-size:3rem;
-    color:#b8860b;
-    margin-bottom:20px;
+    font-size:58px;
+    margin:18px 0;
+    line-height:1.1;
 }
 
 .hero p{
-    max-width:600px;
-    color:#555;
-    margin-bottom:30px;
+    color:#666;
+    margin-bottom:35px;
+    max-width:500px;
 }
 
 .btn{
     display:inline-block;
     background:#111;
-    color:#d4af37;
-    padding:15px 35px;
-    border-radius:30px;
+    color:#fff;
+    padding:16px 36px;
+    border-radius:40px;
     text-decoration:none;
     transition:.3s;
 }
 
 .btn:hover{
-    transform:scale(1.05);
+    background:#b8860b;
 }
 
-/* Sections */
-
-.section,
-.collections{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.section h2,
-.collections h2{
-    color:#b8860b;
-    margin-bottom:25px;
-}
-
-/* Cards */
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-    max-width:1100px;
-    margin:40px auto 0;
-}
-
-.card{
-    background:white;
-    padding:35px 25px;
-    border-radius:20px;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card h3{
-    color:#b8860b;
-    margin-bottom:12px;
-}
-
-.card p{
-    color:#666;
-}
-
-/* Why */
-
-.why{
-    list-style:none;
-}
-
-.why li{
-    margin:15px 0;
-    font-size:18px;
-}
-
-/* Footer */
-
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-}
-
-footer p{
-    margin:10px 0;
-}
-
-/* WhatsApp */
-
-.whatsapp{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    width:60px;
-    height:60px;
-    background:#25D366;
-    color:white;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    font-size:28px;
-    box-shadow:0 10px 20px rgba(0,0,0,.2);
-    transition:.3s;
-}
-
-.whatsapp:hover{
-    transform:scale(1.1);
-}
-
-/* Animation */
-
-@keyframes float{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-8px);
-    }
-
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:2.2rem;
-}
-
-.cards{
-    grid-template-columns:1fr;
-}
-
+.hero-image img{
+    width:100%;
+    border-radius:25px;
+    display:block;
+    object-fit:cover;
 }
