@@ -144,3 +144,36 @@ h2{
 .why p{
   margin:15px;
 }
+body{
+  background:#fffaf3;
+  color:#111;
+}
+
+.hero{
+  min-height:90vh;
+  background:#fffaf3;
+  text-align:center;
+}
+
+.logo{
+  background:#111;
+  color:#d4af37;
+  border:2px solid #d4af37;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.hero h1{
+  color:#b8860b;
+  font-size:50px;
+}
+
+.btn{
+  background:#111;
+  color:#d4af37;
+}
+
+.card{
+  background:white;
+  border:1px solid #eee;
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
