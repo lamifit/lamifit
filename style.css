@@ -477,3 +477,39 @@ body::before {
   z-index: 0;
   transform: rotate(-3deg);
 }
+/* Lami Fit product upgrade */
+
+.card,
+.product,
+.item {
+  background: rgba(255,255,255,0.75);
+  border-radius: 18px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+}
+
+.card:hover,
+.product:hover,
+.item:hover {
+  transform: translateY(-8px);
+}
+
+.card img,
+.product img,
+.item img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+button,
+a {
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+button:hover,
+a:hover {
+  transform: scale(1.05);
+}
