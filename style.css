@@ -357,3 +357,20 @@ button {
 .nav-links a{
     font-size:18px;
 }
+h1 {
+    font-size: 45px;
+}
+
+h2, h3 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.contact-page,
+.about-page,
+.products {
+    padding: 40px 20px;
+}
