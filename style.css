@@ -458,3 +458,22 @@ body {
     margin: 0 auto 15px;
     border-radius: 12px;
 }
+body {
+  background-color: #faf7ef;
+  background-image:
+    linear-gradient(#ddd 1px, transparent 1px);
+  background-size: 100% 35px;
+}
+
+body::before {
+  content: "✎     ♡        ✦        ⌚        ✎        👕";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  font-size: 28px;
+  color: #222;
+  opacity: 0.18;
+  filter: grayscale(1);
+  z-index: 0;
+  transform: rotate(-3deg);
+}
